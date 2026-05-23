@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adeniyi Ayomide | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Adeniyi Ayomide</div>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
+    </nav>
+    <button class="hamburger" id="hamburger">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/profile.jpeg" alt="Adeniyi Ayomide">
+      <p class="eyebrow">Frontend developer in training</p>
+      <h1>Hi, I'm Adeniyi Ayomide</h1>
+      <p id="heroTagline" class="hero-copy"></p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">View Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-highlights">
+        <div class="highlight-card">
+          <span>Current focus</span>
+          <strong>Responsive layouts & accessibility</strong>
+        </div>
+        <div class="highlight-card">
+          <span>Learning</span>
+          <strong>JavaScript and React basics</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <div class="card about-grid">
+        <div>
+          <p>I'm a self-taught developer focused on creating simple, user-friendly web experiences. I enjoy working with HTML, CSS, and JavaScript, and I'm currently learning React.</p>
+          <p>When I'm not coding, you'll find me reading or volunteering at Central Mosque Ebutte-Igbogbo, Ikorodu.</p>
+        </div>
+        <div class="about-side">
+          <p class="about-note">What I bring to a team:</p>
+          <ul>
+            <li>Clear, clean layout structure</li>
+            <li>Mobile-friendly design</li>
+            <li>Accessibility-conscious thinking</li>
+            <li>A willingness to learn and improve quickly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <p class="section-copy">I’m building a small but growing portfolio. Use the filters to explore the kind of work I’m learning and improving.</p>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="website">Websites</button>
+        <button class="filter-btn" data-filter="tool">Tools</button>
+        <button class="filter-btn" data-filter="learning">Learning</button>
+      </div>
+      <div class="grid project-grid">
+        <article class="card project-card" data-category="website">
+          <p class="project-tag">Website</p>
+          <h3>Mosque Website</h3>
+          <p>A responsive site for Central Mosque Ebutte-Igbogbo, Ikorodu with prayer times and event announcements.</p>
+          <a href="#">View Project →</a>
+        </article>
+        <article class="card project-card" data-category="tool">
+          <p class="project-tag">Tool</p>
+          <h3>Business Card Generator</h3>
+          <p>freeCodeCamp lab project built with HTML and CSS. Fully responsive and accessible.</p>
+          <a href="#">View Project →</a>
+        </article>
+        <article class="card project-card" data-category="learning">
+          <p class="project-tag">Learning</p>
+          <h3>Todo App</h3>
+          <p>A simple todo app with localStorage persistence and dark mode support.</p>
+          <a href="#">View Project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS3</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Git & GitHub</span>
+          <span class="skill">Responsive Design</span>
+          <span class="skill">Accessibility</span>
+        </div>
+
+        <div class="skill-progress-list">
+          <div class="progress-row">
+            <div class="progress-labels">
+              <strong>HTML</strong>
+              <span>90%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="90"></span></div>
+          </div>
+          <div class="progress-row">
+            <div class="progress-labels">
+              <strong>CSS</strong>
+              <span>84%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="84"></span></div>
+          </div>
+          <div class="progress-row">
+            <div class="progress-labels">
+              <strong>JavaScript</strong>
+              <span>70%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="70"></span></div>
+          </div>
+          <div class="progress-row">
+            <div class="progress-labels">
+              <strong>React</strong>
+              <span>45%</span>
+            </div>
+            <div class="progress-track"><span class="progress-fill" data-progress="45"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <div class="contact-layout">
+        <div class="card contact-details">
+          <p>Have a project in mind? Let's talk.</p>
+          <p><strong>Email:</strong> <a href="mailto:addysam@yahoo.com">addysam@yahoo.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Jamal4dev" target="_blank" rel="noopener noreferrer">github.com/Jamal4dev</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ayomide-adeniyi-91746130a" target="_blank" rel="noopener noreferrer">linkedin.com/in/ayomide-adeniyi</a></p>
+          <p class="contact-note">You can also send a quick message below and I’ll follow up.</p>
+        </div>
+
+        <form id="contactForm" class="card contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </label>
+          <label>
+            Message
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your idea"></textarea>
+          </label>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Adeniyi Ayomide. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
