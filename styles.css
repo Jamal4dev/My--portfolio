@@ -10,6 +10,7 @@
       --muted: #6c757d;
       --border: #e0e0e0;
       --shadow: 0 4px 12px rgba(0,0,0,0.08);
+      --highlight: #e9ecef;
     }
 
     [data-theme="dark"] {
@@ -23,6 +24,7 @@
       --muted: #adb5bd;
       --border: #2d2d2d;
       --shadow: 0 4px 12px rgba(0,0,0,0.4);
+      --highlight: #1a1a1a;
     }
 
     * {
