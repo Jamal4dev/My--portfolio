@@ -1,4 +1,8 @@
  :root {
+  /* UI variables */
+  --highlight: rgba(15,81,50,0.06);
+  --btn-foreground: #ffffff;
+  --input-bg: #ffffff;
       --bg: #f8f9fa;
       --text: #212529;
       --card: #ffffff;
@@ -9,6 +13,9 @@
     }
 
     [data-theme="dark"] {
+      --highlight: rgba(32,201,151,0.06);
+      --btn-foreground: #ffffff;
+      --input-bg: #1e1e1e;
       --bg: #121212;
       --text: #f1f3f5;
       --card: #1e1e1e;
@@ -135,7 +142,7 @@
     .btn {
       display: inline-block;
       background: var(--accent);
-      color: white;
+      color: var(--btn-foreground);
       padding: 0.8rem 1.5rem;
       border-radius: 8px;
       font-weight: 600;
@@ -344,7 +351,7 @@
     .filter-btn.active,
     .filter-btn:hover {
       background: var(--accent);
-      color: #fff;
+      color: var(--btn-foreground);
       border-color: var(--accent);
     }
 
@@ -423,7 +430,7 @@
       border-radius: 10px;
       padding: 0.85rem 1rem;
       font: inherit;
-      background: var(--bg);
+      background: var(--input-bg);
       color: var(--text);
     }
 

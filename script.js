@@ -12,6 +12,10 @@ if (savedTheme) {
 } else if (systemPrefersDark) {
   html.dataset.theme = 'dark';
   themeToggle.textContent = '☀️ Light';
+} else {
+  // Ensure an explicit default so the toggle and CSS variables behave predictably
+  html.dataset.theme = 'light';
+  themeToggle.textContent = '🌙 Dark';
 }
 
 themeToggle.addEventListener('click', () => {
@@ -21,6 +25,8 @@ themeToggle.addEventListener('click', () => {
   html.dataset.theme = newTheme;
   localStorage.setItem('theme', newTheme);
   themeToggle.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+  // Update accessible label
+  themeToggle.setAttribute('aria-pressed', newTheme === 'dark' ? 'true' : 'false');
 });
 
 // Mobile menu toggle
